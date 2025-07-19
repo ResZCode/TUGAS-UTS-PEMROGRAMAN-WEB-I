@@ -1,0 +1,219 @@
+* {
+  transition: all 0.3s ease;
+}
+
+body {
+  margin-top: 60px;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fa;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  scroll-margin-top: 60px;
+}
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  gap: 10px;
+}
+
+.navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  padding: 8px 18px;
+  margin: 0 6px;
+  color: #ddd !important; 
+  border: 1.5px solid transparent;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand.active-brand {
+  color: #ffffff !important; 
+  background-color: #f8f9fa33;
+  border-color: #ddd;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.jumbotron {
+  background: #f8f9fa;
+}
+.jumbotron img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+#profil {
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+#galeri,
+#achievment,
+#komentar {
+  padding-top: 50px;
+}
+
+#profil h2 {
+  margin-bottom: 0.3rem;
+}
+#profil p {
+  margin-bottom: 14px;
+  line-height: 1.8;
+  font-size: 1.15rem;
+}
+#profil .text-center p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+#profil .row .col-sm-6 {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1.15rem;
+}
+.text-center.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #6a11cb;
+  box-shadow: 0 8px 20px rgba(38, 38, 38, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(38, 38, 38, 0.4);
+  border-color: #2575fc;
+}
+
+.btn-outline-light {
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #2c5364;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.label {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 8px;
+}
+
+.custom-arrow {
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 14px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.custom-arrow:hover {
+  background: rgba(255,255,255,0.2);
+  color: #facc15;
+}
+
+.achievment-card {
+  background: #f8f9fa33;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.achievment-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.achievment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.achievment-card:hover img {
+  transform: scale(1.05);
+}
+.achievment-card h5 {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #2c5364;
+}
+
+footer {
+  background: linear-gradient(to right, #232526, #414345);
+  color: #ccc;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
